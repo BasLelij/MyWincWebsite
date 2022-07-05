@@ -11,7 +11,7 @@
   <body>
     <header>
       <div>
-        <h1>Ahmed's Ice Cream Shop</h1>
+        <h1>my website</h1>
       </div>
       <nav>
         <ul>
@@ -23,32 +23,99 @@
       </nav>
     </header>
     <main>
-      <h2>Contact</h2>
       <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+        <div>
+          <label>Name</label>
+          <input type="text" name="name" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div>
+          <label>Phone</label>
+          <input type="tel" name="phone" />
+        </div>
+        <div>
+          <label>Age</label>
+          <input type="number" name="age" min="1" max="200" />
+        </div>
+        <div>
+          <label>Birthdate</label>
+          <input type="date" name="date" min="1900-06-10" />
+        </div>
+        <hr />
+  
+        <div>
+          Gender
+          <div>
+            <label>Male</label>
+            <input type="radio" name="gender" value="male" />
+          </div>
+          <div>
+            <label>Female</label>
+            <input type="radio" name="gender" value="female" />
+          </div>
+        </div>
+        <hr />
+        <div>
+          Favorite Cuisine
+          <div>
+            <label>Italian</label>
+            <input type="checkbox" name="italian" />
+          </div>
+          <div>
+            <label>French</label>
+            <input type="checkbox" name="french" />
+          </div>
+          <div>
+            <label>Spanish</label>
+            <input type="checkbox" name="spanish" />
+          </div>
+          <div>
+            <label>Arabic</label>
+            <input type="checkbox" name="arabic" />
+          </div>
+        </div>
+        <hr />
+  
+        <div>
+          <label>Favorite color of your cooking apron</label>
+          <input type="color" name="color" />
+        </div>
+  
+        <hr />
+  
+        <div>
+          <label>Bio</label>
+          <textarea name="bio"></textarea>
+        </div>
+        <input type="hidden" name="hidden" value="hi" />
+        <div>
+          <label>File</label>
+          <input type="file" name="file" />
+        </div>
+  
+        <div>
+          <label>URL</label>
+          <input type="url" name="url" />
+        </div>
+  
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
       </form>
     </main>
-    <footer>
-      <div>Copyright Ahmed ©️ 2021</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="flavours.html">Flavours</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
-</html>
+      <footer>
+        <div>Copyright Ahmed ©️ 2021</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavours.html">Flavours</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
+        </p>
